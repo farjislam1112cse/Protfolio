@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: linear-gradient(92.23deg,
+      #ff56f6 21.43%,
+      #b936ee 50.63%,
+      #3bace2 100%,
+      #406aff 117.04%);
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.btn:hover {
+  background: linear-gradient(92.23deg,
+      #406aff 21.43%,
+      #3bace2 50.63%,
+      #b936ee 100%,
+      #ff56f6 117.04%);
+}
+
+.gradient,
+.active {
+  background: linear-gradient(92.23deg,
+      #406aff 21.43%,
+      #3bace2 50.63%,
+      #b936ee 100%,
+      #ff56f6 117.04%);
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: 1.125rem;
+  /* 18px */
+  line-height: 2rem;
+  /* 32px */
+  color: #ffffff;
+  background-color: #b936ee;
+  /* white */
+}
+
+.h2 {
+  font-family: var(--font-primary);
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+  /* 24px */
+  letter-spacing: 10%;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 1.5rem;
+  /* 24px */
+  line-height: 46px;
+}
+
+.btn {
+  border-radius: 9999px;
+  /* Full rounded */
+  font-family: var(--font-primary);
+  color: #ffffff;
+  /* white */
+  font-weight: 500;
+}
+
+.btn-sm {
+  height: 48px;
+  padding-left: 1.5rem;
+  /* 24px */
+  padding-right: 1.5rem;
+  /* 24px */
+  font-size: 0.875rem;
+  /* 14px */
+}
+
+.btn-lg {
+  height: 56px;
+  padding-left: 2.5rem;
+  /* 40px */
+  padding-right: 2.5rem;
+  /* 40px */
+  font-size: 1rem;
+  /* 16px */
+}
+
+.btn-link {
+  font-size: 1rem;
+  /* 16px */
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right, #42A6E3, #FF56F6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-family: var(--font-primary);
+}
+
+.text-gradient:hover {
+  background-image: linear-gradient(to right, #FF56F6, #42A6E3);
+}
+
+.section {
+  padding-top: 2rem;
+  /* 32px */
+  padding-bottom: 2rem;
+  /* 32px */
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 6rem;
+    /* 96px */
+    padding-bottom: 6rem;
+    /* 96px */
+    height: 100vh;
+    /* Full screen height */
+  }
+}
