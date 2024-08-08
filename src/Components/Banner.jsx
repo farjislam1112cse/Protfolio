@@ -10,7 +10,7 @@ import { FaDribbble, FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 const Banner = () => {
     return (
         <div id='home' className='section flex  min-h-[85vh] lg:min-h-[70vh] '>
-            <div className='container mx-auto flex  flex-col lg:flex-row'>
+            <div className='container mx-auto flex  flex-col-reverse lg:flex-row'>
                 {/* text */}
                 <div className=' w-full lg:w-[60%]'>
                     <div className='flex-1 text-center lg:text-left font-secondary'>
@@ -43,9 +43,9 @@ const Banner = () => {
                     </motion.div>
                 </div>
                 {/* image */}
-                <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'} className=' w-full lg:w-[30%] max-w-max mx-auto lg:mx-0 '>
+                <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'} className=' w-full lg:w-[30%] max-w-max mx-auto lg:mx-0  mix-blend-lighten  py-4 lg:py-0'>
                    
-                    <img className=' max-w-[80%] mx-auto lg:max-w-full  rounded-full  bg-gradient-to-r from-[#B809C3] to-[#260129]' src={Image} alt="" />
+                    <img className=' rounded-full  max-w-[50%] lg:max-w-[100%] mx-auto  bg-gradient-to-r from-[#B809C3] to-[#260129]' src={Image} alt="" />
 
                 </motion.div>
             </div>
