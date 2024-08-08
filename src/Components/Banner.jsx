@@ -27,7 +27,7 @@ const Banner = () => {
                             ]}></TypeAnimation>
                         </motion.div>
                     </div>
-                    <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 max-w-lg mx-auto lg:mx-0 lg:text-left text-center text-xl'>
+                    <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 max-w-lg mx-auto lg:mx-0 lg:text-left text-center text-base'>
                         Passionate Frontend Developer skilled in creating dynamic, responsive, and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, React, and Tailwind. Dedicated to crafting seamless digital experiences and bringing designs to life with precision and creativity.
                     </motion.p>
                     <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex gap-x-6 max-w-max mx-auto lg:mx-0 mb-8  items-center '>
@@ -43,9 +43,9 @@ const Banner = () => {
                     </motion.div>
                 </div>
                 {/* image */}
-                <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'} className=' w-full lg:w-[30%] max-w-max mx-auto lg:mx-0  mix-blend-lighten  py-4 lg:py-0'>
+                <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'} className=' w-full lg:w-[30%] max-w-max mx-auto lg:mx-0 '>
                    
-                    <img className=' rounded-full  max-w-[50%] lg:max-w-[100%] mx-auto  bg-gradient-to-r from-[#B809C3] to-[#260129]' src={Image} alt="" />
+                    <img className=' max-w-[50%] mx-auto lg:max-w-full  rounded-full  bg-gradient-to-r from-[#B809C3] to-[#260129]' src={Image} alt="" />
 
                 </motion.div>
             </div>

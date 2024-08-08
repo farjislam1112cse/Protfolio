@@ -17,7 +17,7 @@ const About = () => {
         <div id='about' className='section' ref={ref}>
             <div className='container mx-auto flex flex-col-reverse gap-y-2 gap-x-4 lg:flex-row justify-between items-center'>
                 {/* image */}
-                <motion.div variants={fadeIn('right', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=' w-[100%] lg:w-[50%] mix-blend-lighten ' >
+                <motion.div variants={fadeIn('right', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=' w-[100%] lg:w-[30%] mix-blend-lighten ' >
                     <img className='max-w-[100%] mx-auto block' src={Image} alt="" />
                 </motion.div>
                 {/* text */}
