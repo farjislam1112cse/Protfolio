@@ -5,6 +5,7 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { fadeIn } from './varients';
+import { TypeAnimation } from 'react-type-animation';
 const About = () => {
 
     const [ref, inView] = useInView(
@@ -17,26 +18,32 @@ const About = () => {
         <div id='about' className='section' ref={ref}>
             <div className='container mx-auto flex flex-col-reverse gap-y-2 gap-x-4 lg:flex-row justify-between items-center'>
                 {/* image */}
-                <motion.div variants={fadeIn('right', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=' w-[100%] lg:w-[30%] mix-blend-lighten ' >
+                <motion.div variants={fadeIn('right', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=' w-[100%] lg:w-[40%] mix-blend-lighten ' >
                     <img className='max-w-[100%] mx-auto block' src={Image} alt="" />
                 </motion.div>
                 {/* text */}
                 <motion.div variants={fadeIn('left', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='w-[100%] lg:w-[50%] text-center lg:text-left '>
-                    <p>Nice to meet you-</p>
+                    <TypeAnimation wrapper='span' repeat={Infinity} speed={50} className='text-slate-50 text-2xl' sequence={[
+                        'Nice to meet you--',
+                        2000,
+                        'Nice to meet you--',
+                        2000,
+                    ]}></TypeAnimation>
                     <h2 className=' text-center lg:text-left mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[0.8]'>Everything
                         <span className='text-accent'> About Me</span></h2>
                     {/* about description */}
                     <div className='text-xs space-y-4'>
-                        <p>I’m a web designer and developer with a great passion for building things with code. I live in beautiful kushita in the southwest of Bangladesh, where I create amazing websites design and develope. just like you are gonna see in one of my portfolio website.</p>
+                        <p>I’m a web designer and front-end developer with a deep passion for building innovative web solutions. I create visually stunning and highly functional websites, Feel free to explore my portfolio...</p>
 
-                        <p>I have a lot of skills Html5, Css3, Sass, Bootstrap, Tailwind, JavaScript, React.js and Redux, and i also familiar with Vue.js Node.js, and MongoDB.</p>
+                        <p>My skill set includes HTML5, CSS3, Tailwind, JavaScript, and React. I’m also experienced with Next.js, MongoDB, and API integration, enabling me to build dynamic, data-driven applications. Additionally, I'm proficient in implementing secure authentication using Firebase.</p>
+
                     </div>
                     {/* countup */}
                     <div className='flex flex-col lg:flex-row gap-x-4 py-4 '>
                         <div className=''>
                             <div className='text-[40px] font-tertiary text-gradient mb-2'>
                                 {inView ? <CountUp start={0} end={2} duration={3}></CountUp> : null}
-                              +
+                                +
                             </div>
                             <div className='font-secondary space-x-2 font-semibold text-sm tracking-[2px]'>
                                 <span>Years Of</span>

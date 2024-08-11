@@ -15,7 +15,7 @@ const Banner = () => {
                 <div className=' w-full lg:w-[60%]'>
                     <div className='flex-1 text-center lg:text-left font-secondary'>
                         <motion.h2 variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='text-[50px] lg:text-[60px] font-bold leading-[0.8]'>Urmila<span className='ml-5'>Badhon</span></motion.h2>
-                        <motion.div variants={fadeIn('up', 0.4)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[0.8]'>
+                        <motion.div variants={fadeIn('up', 0.4)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[0.8] min-h-9 lg:min-h-auto'>
                             <span className=''> I am a </span>
                             <TypeAnimation wrapper='span' repeat={Infinity} speed={50} className='text-accent' sequence={[
                                 'Frontend Developer',
@@ -52,5 +52,4 @@ const Banner = () => {
         </div>
     );
 };
-
 export default Banner;

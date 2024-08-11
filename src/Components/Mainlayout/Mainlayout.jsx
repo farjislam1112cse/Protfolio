@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import Home from '../Home';
 import About from '../About';
+import Services from '../Services';
 
 
 const Mainlayout = () => {
@@ -10,6 +11,7 @@ const Mainlayout = () => {
            
             <Home></Home>
             <About></About>
+            <Services></Services>
             <Navbar></Navbar>
         </div>
     );
