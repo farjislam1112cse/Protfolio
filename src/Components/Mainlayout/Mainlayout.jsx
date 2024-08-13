@@ -5,18 +5,21 @@ import About from '../About';
 import Services from '../Services';
 import Work from '../Work';
 import Contact from '../Contact';
-
+import Footer from '../Footer';
 
 const Mainlayout = () => {
     return (
-        <div className='bg-site'>
-           
-            <Home></Home>
-            <About></About>
-            <Services></Services>
-            <Work></Work>
-            <Contact></Contact>
-            <Navbar></Navbar>
+        <div>
+            <div className='bg-site'>
+                <Home></Home>
+                <About></About>
+                <Services></Services>
+                <Work></Work>
+                <Contact></Contact>
+                <Footer></Footer>
+                <Navbar></Navbar>
+            </div>
+            
         </div>
     );
 };

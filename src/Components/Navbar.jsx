@@ -14,7 +14,7 @@ const Navbar = () => {
                     <Link activeClass='active' smooth={true} spy={true} to='home' className=' cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-slate-100 transition-all]' >
                         <GoHome />
                     </Link>
-                    <Link activeClass='active' smooth={true} spy={true} to='about' className='   cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-slate-100 transition-all '>
+                    <Link  activeClass='active' smooth={true} spy={true} to='/about' className='   cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-slate-100 transition-all '>
                         <FaRegUser />
                     </Link>
                     <Link activeClass='active' smooth={true} spy={true} to='service' className='   cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-slate-100 transition-all '>

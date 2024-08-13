@@ -33,6 +33,19 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    [
+      function ({ addUtilities }) {
+        const newUtilities = {
+          '.autofill': {
+            '-webkit-box-shadow': '0 0 0 1000px transparent inset',
+            'box-shadow': '0 0 0 1000px transparent inset',
+            '-webkit-text-fill-color': 'inherit',
+          },
+        };
+        addUtilities(newUtilities, ['responsive', 'hover', 'focus']);
+      }
+    ],
+  ],
 }
 

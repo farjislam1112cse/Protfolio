@@ -55,8 +55,7 @@ const Services = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: false, amount: 0.3 }}
-                        className='w-full lg:max-w-[50%]'
-                 >
+                        className='w-full lg:max-w-[50%]'>
                         <div className='text-center lg:text-left'>
                             <TypeAnimation
                                 wrapper='span'
