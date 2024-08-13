@@ -45,9 +45,8 @@ const Services = () => {
         // Toggle the expanded state for the clicked service
         setExpandedServiceIndex(expandedServiceIndex === index ? null : index);
     };
-
     return (
-        <div className='py-24'>
+        <div className='section '>
             <div className="container mx-auto">
                 <div className='flex flex-col lg:flex-row justify-between items-center '>
                     {/* text */}
@@ -57,7 +56,7 @@ const Services = () => {
                         whileInView="show"
                         viewport={{ once: false, amount: 0.3 }}
                         className='w-full lg:max-w-[50%]'
-                    >
+                 >
                         <div className='text-center lg:text-left'>
                             <TypeAnimation
                                 wrapper='span'
@@ -72,7 +71,7 @@ const Services = () => {
                                 ]}
                             />
                         </div>
-                        <h2 className='text-center lg:text-left text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[0.8]'>
+                        <h2 className='text-center lg:text-left text-[36px] lg:text-[40px] font-primary font-semibold uppercase leading-[0.8]'>
                             <span className='text-accent'>What I Do</span>
                         </h2>
                         <div className='mix-blend-lighten'>
@@ -93,7 +92,7 @@ const Services = () => {
                                 return (
                                     <div className='border-b border-white/20 flex items-center' key={index}>
                                         <div className='py-4 w-[80%]'>
-                                            <h4 className='text-[20px] tracking-wider font-secondary font-semibold'>{name}</h4>
+                                            <h4 className='text-[20px] tracking-wider font-primary font-semibold'>{name}</h4>
                                             <p className={`font-secondary leading-tight text-xs overflow-hidden transition-all duration-300 ${expandedServiceIndex === index ? 'max-h-[700px]' : 'max-h-3'}`}>
                                                 {description}
                                             </p>

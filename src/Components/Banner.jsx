@@ -44,7 +44,7 @@ const Banner = () => {
                 </div>
                 {/* image */}
                 <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'} className=' w-full lg:w-[30%] max-w-max mx-auto lg:mx-0 '>
-                   
+
                     <img className=' max-w-[50%] mx-auto lg:max-w-full  rounded-full  bg-gradient-to-r from-[#B809C3] to-[#260129]' src={Image} alt="" />
 
                 </motion.div>

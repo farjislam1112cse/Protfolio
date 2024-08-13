@@ -29,7 +29,7 @@ const About = () => {
                         'Nice to meet you--',
                         2000,
                     ]}></TypeAnimation>
-                    <h2 className=' text-center lg:text-left mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[0.8]'>Everything
+                    <h2 className='  text-center lg:text-left mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[0.8]'>Everything
                         <span className='text-accent'> About Me</span></h2>
                     {/* about description */}
                     <div className='text-xs space-y-4'>

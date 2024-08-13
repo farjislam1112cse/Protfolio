@@ -3,7 +3,13 @@ import React from 'react';
 const Contact = () => {
     return (
         <div className='section'>
-            contact
+            <div className="container mx-auto">
+                {/* text */}
+                <div>
+
+                </div>
+                {/* from */}
+            </div>
         </div>
     );
 };
