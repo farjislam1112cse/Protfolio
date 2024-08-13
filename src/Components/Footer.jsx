@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className=" py-24 dark:bg-gray-900 m-4">
+        <footer className=" py-16 lg:py-12 dark:bg-gray-900 m-4">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <h1 className='my-0 text-2xl drop-shadow-[0_5px_5px_rgba(255,255,255,0.2)]'>CodeCrafters </h1>

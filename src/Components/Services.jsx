@@ -3,6 +3,7 @@ import { IoMdArrowDropdownCircle, IoMdArrowDropupCircle } from 'react-icons/io';
 import { motion } from 'framer-motion';
 import { fadeIn } from './varients';
 import { TypeAnimation } from 'react-type-animation';
+import Image from '../images/services-bg.png'
 
 const services = [
     {
@@ -74,7 +75,7 @@ const Services = () => {
                             <span className='text-accent'>What I Do</span>
                         </h2>
                         <div className='mix-blend-lighten'>
-                            <img className='max-w-full block' src="src/images/services-bg.png" alt="Services Background" />
+                            <img className='max-w-full block' src={Image}  alt="Services Background" />
                         </div>
                     </motion.div>
                     {/* service */}

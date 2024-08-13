@@ -5,7 +5,7 @@ import { FaEye } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { fadeIn } from './varients';
-
+import Image from '../images/protfolio1.png'
 const Work = () => {
   return (
     <div className='py-12'>
@@ -34,17 +34,17 @@ const Work = () => {
 
             <div className='group relative overflow-hidden border-2 border-white/40 rounded-xl'>
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='group-hover:scale-125 transition-all duration-500' src="src/images/protfolio1.png" alt="" />
+              <img className='group-hover:scale-125 transition-all duration-500' src={Image} alt="" />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='font-primary text-gradient text-4xl'>Responsive Design</span>
                 <Link><FaEye className='text-2xl' /></Link></div>
             </div>
           </motion.div>
-          <motion.div variants={fadeIn('left', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3}} className='flex-1 flex flex-col gap-y-12'>
+          <motion.div variants={fadeIn('left', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 flex flex-col gap-y-12'>
             {/* image */}
 
             <div className='group relative overflow-hidden border-2 border-white/40 rounded-xl'>
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='group-hover:scale-125 transition-all duration-500' src="src/images/protfolio1.png" alt="" />
+              <img className='group-hover:scale-125 transition-all duration-500' src={Image} alt="" />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='font-primary text-gradient text-4xl'>Responsive Design</span>
                 <Link><FaEye className='text-2xl' /></Link></div>
             </div>
@@ -53,7 +53,7 @@ const Work = () => {
 
             <div className='group relative overflow-hidden border-2 border-white/40 rounded-xl'>
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='group-hover:scale-125 transition-all duration-500' src="src/images/protfolio1.png" alt="" />
+              <img className='group-hover:scale-125 transition-all duration-500' src={Image} alt="" />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='font-primary text-gradient text-4xl'>Responsive Design</span>
                 <Link><FaEye className='text-2xl' /></Link></div>
             </div>

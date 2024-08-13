@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import Image from '../images/avatar.png'
 import { motion } from 'framer-motion';
@@ -31,7 +31,7 @@ const Banner = () => {
                     </motion.p>
                     <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex gap-x-6 max-w-max mx-auto lg:mx-0 mb-8  items-center '>
                         <button className='btn btn-lg'>contact me</button>
-                        <Link to='/protfolio' className='text-gradient btn-link cursor-pointer'>My Protfolio</Link>
+                        <NavLink to='/protfolio' className='text-gradient btn-link cursor-pointer'>My Protfolio</NavLink>
                     </motion.div>
                     {/* social */}
                     <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 py-4 lg:py-0'>
